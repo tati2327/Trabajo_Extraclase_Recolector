@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tati2327/CLionProjects/Trabajo_Ectraclase1/Collector.cpp
+Collector.h
+/home/tati2327/CLionProjects/Trabajo_Ectraclase1/Collector.h
+Node.h
+/home/tati2327/CLionProjects/Trabajo_Ectraclase1/Node.h
+iostream
+-
+stdlib.h
+-
+
+/home/tati2327/CLionProjects/Trabajo_Ectraclase1/Collector.h
+cstdlib
+-
+
+/home/tati2327/CLionProjects/Trabajo_Ectraclase1/Node.h
+Collector.h
+/home/tati2327/CLionProjects/Trabajo_Ectraclase1/Collector.h
+

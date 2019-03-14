@@ -1,0 +1,3 @@
+/home/tati2327/CLionProjects/Trabajo_Ectraclase1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/tati2327/CLionProjects/Trabajo_Ectraclase1/cmake-build-debug/CMakeFiles/Trabajo_Ectraclase1.dir
+/home/tati2327/CLionProjects/Trabajo_Ectraclase1/cmake-build-debug/CMakeFiles/edit_cache.dir
