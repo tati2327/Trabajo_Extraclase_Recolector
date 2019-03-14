@@ -1,0 +1,104 @@
+\hypertarget{classList}{}\section{List Class Reference}
+\label{classList}\index{List@{List}}
+
+
+{\ttfamily \#include $<$List.\+h$>$}
+
+
+
+Collaboration diagram for List\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classList_a64d878a92d11f7c63c70cbe4e7dd4176}{List} ()
+\item 
+void \hyperlink{classList_ab85bbd9b130eec1bc1c7139f5458ecfb}{insert\+Node} (int \+\_\+data)
+\item 
+void \hyperlink{classList_a6531aac590fce9b8e5040bcb633c89b1}{delete\+Node} (int n)
+\item 
+int \hyperlink{classList_a0856adc8bce70d697a8c650b505d6080}{get\+First} ()
+\item 
+void \hyperlink{classList_ab5414be89ca36fe1a705e0a65cc3f1e8}{set\+First} (int \+\_\+data)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classList_abffef6e25dd87e04d83044aa63b2bf30}\label{classList_abffef6e25dd87e04d83044aa63b2bf30}} 
+\hyperlink{classNode}{Node} $\ast$ {\bfseries first} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase \hyperlink{classList}{List}.
+
+lista enlazada. La cual es un tipo de dato abstracto que crece de manera dinámica y almacena datos en forma organizada. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classList_a64d878a92d11f7c63c70cbe4e7dd4176}\label{classList_a64d878a92d11f7c63c70cbe4e7dd4176}} 
+\index{List@{List}!List@{List}}
+\index{List@{List}!List@{List}}
+\subsubsection{\texorpdfstring{List()}{List()}}
+{\footnotesize\ttfamily List\+::\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+puntero que apunta al primer nodo de la lista.
+
+Constructor de la clase \hyperlink{classList}{List}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classList_a6531aac590fce9b8e5040bcb633c89b1}\label{classList_a6531aac590fce9b8e5040bcb633c89b1}} 
+\index{List@{List}!delete\+Node@{delete\+Node}}
+\index{delete\+Node@{delete\+Node}!List@{List}}
+\subsubsection{\texorpdfstring{delete\+Node()}{deleteNode()}}
+{\footnotesize\ttfamily void List\+::delete\+Node (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+delete\+Node. Busca un nodo con un dato n en la lista enlazada, lo retira de la lista y lo pasa a la lista del \hyperlink{classCollector}{Collector} para reciclar ese espacio de memoria
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classList_a0856adc8bce70d697a8c650b505d6080}\label{classList_a0856adc8bce70d697a8c650b505d6080}} 
+\index{List@{List}!get\+First@{get\+First}}
+\index{get\+First@{get\+First}!List@{List}}
+\subsubsection{\texorpdfstring{get\+First()}{getFirst()}}
+{\footnotesize\ttfamily int List\+::get\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get\+First.
+
+\begin{DoxyReturn}{Returns}
+el primer elemento de la lista 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classList_ab85bbd9b130eec1bc1c7139f5458ecfb}\label{classList_ab85bbd9b130eec1bc1c7139f5458ecfb}} 
+\index{List@{List}!insert\+Node@{insert\+Node}}
+\index{insert\+Node@{insert\+Node}!List@{List}}
+\subsubsection{\texorpdfstring{insert\+Node()}{insertNode()}}
+{\footnotesize\ttfamily void List\+::insert\+Node (\begin{DoxyParamCaption}\item[{int}]{\+\_\+data }\end{DoxyParamCaption})}
+
+insert\+Node. Método que inserta un nuevo nodo en la lista, ya sea en un espacio nuevo de memoria o en uno reciclado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+data} & es de tipo integer y es el dato que almacenará el nuevo nodo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classList_ab5414be89ca36fe1a705e0a65cc3f1e8}\label{classList_ab5414be89ca36fe1a705e0a65cc3f1e8}} 
+\index{List@{List}!set\+First@{set\+First}}
+\index{set\+First@{set\+First}!List@{List}}
+\subsubsection{\texorpdfstring{set\+First()}{setFirst()}}
+{\footnotesize\ttfamily void List\+::set\+First (\begin{DoxyParamCaption}\item[{int}]{\+\_\+data }\end{DoxyParamCaption})}
+
+set\+First Función para modificar el dato del primer nodo de la lista
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & de tipo int \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+List.\+h\item 
+List.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,88 @@
+\hypertarget{classCollector}{}\section{Collector Class Reference}
+\label{classCollector}\index{Collector@{Collector}}
+
+
+{\ttfamily \#include $<$Collector.\+h$>$}
+
+
+
+Collaboration diagram for Collector\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{classCollector_a48f700f3915479e1fa2617507694fd5a}{new\+Node} (size\+\_\+t \+\_\+size)
+\item 
+void \hyperlink{classCollector_adb58488280330f30a3ec397e2adc2fd9}{collect\+Node} (void $\ast$\+\_\+node)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classCollector}{Collector} $\ast$ \hyperlink{classCollector_ae39d639e26fd35099abf39b018a0f68e}{get\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNode}{Node} $\ast$ \hyperlink{classCollector_a2f550f4725b003187570402d9d9803bf}{collector\+First} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+clase \hyperlink{classCollector}{Collector}. Se encarga de reciclar la memoria usada para almacenar nodos, guardandola en su propia lista enlazada. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCollector_adb58488280330f30a3ec397e2adc2fd9}\label{classCollector_adb58488280330f30a3ec397e2adc2fd9}} 
+\index{Collector@{Collector}!collect\+Node@{collect\+Node}}
+\index{collect\+Node@{collect\+Node}!Collector@{Collector}}
+\subsubsection{\texorpdfstring{collect\+Node()}{collectNode()}}
+{\footnotesize\ttfamily void Collector\+::collect\+Node (\begin{DoxyParamCaption}\item[{void $\ast$}]{\+\_\+node }\end{DoxyParamCaption})}
+
+collect\+Node. Recibe un nodo por referencia y lo recicla, añadiendolo a la lista \hyperlink{classCollector}{Collector}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+node} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCollector_ae39d639e26fd35099abf39b018a0f68e}\label{classCollector_ae39d639e26fd35099abf39b018a0f68e}} 
+\index{Collector@{Collector}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Collector@{Collector}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily \hyperlink{classCollector}{Collector} $\ast$ Collector\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+get\+Instance. Función que incorpora el patron de diseño Singleton
+
+\begin{DoxyReturn}{Returns}
+una instancia estática de \hyperlink{classCollector}{Collector} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCollector_a48f700f3915479e1fa2617507694fd5a}\label{classCollector_a48f700f3915479e1fa2617507694fd5a}} 
+\index{Collector@{Collector}!new\+Node@{new\+Node}}
+\index{new\+Node@{new\+Node}!Collector@{Collector}}
+\subsubsection{\texorpdfstring{new\+Node()}{newNode()}}
+{\footnotesize\ttfamily void $\ast$ Collector\+::new\+Node (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{\+\_\+size }\end{DoxyParamCaption})}
+
+new\+Node. Verifica si la lista de collector tiene nodos reciclados y sino reserva un nuevo espacio de memoria
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un puntero de tipo void$\ast$ 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCollector_a2f550f4725b003187570402d9d9803bf}\label{classCollector_a2f550f4725b003187570402d9d9803bf}} 
+\index{Collector@{Collector}!collector\+First@{collector\+First}}
+\index{collector\+First@{collector\+First}!Collector@{Collector}}
+\subsubsection{\texorpdfstring{collector\+First}{collectorFirst}}
+{\footnotesize\ttfamily \hyperlink{classNode}{Node}$\ast$ Collector\+::collector\+First = nullptr}
+
+Puntero que almacena la primera posicion de la lista de \hyperlink{classCollector}{Collector} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Collector.\+h\item 
+Collector.\+cpp\end{DoxyCompactItemize}

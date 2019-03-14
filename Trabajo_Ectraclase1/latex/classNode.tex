@@ -1,0 +1,124 @@
+\hypertarget{classNode}{}\section{Node Class Reference}
+\label{classNode}\index{Node@{Node}}
+
+
+{\ttfamily \#include $<$Node.\+h$>$}
+
+
+
+Collaboration diagram for Node\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNode_af93785746fd98a394a2295ba2b1f523c}{Node} (int \hyperlink{classNode_a87c003c9f600e3fc58e6e90835f0b605}{data}, \hyperlink{classNode}{Node} $\ast$\+\_\+next)
+\item 
+int \hyperlink{classNode_aca98907146d5d0687f48bf8be9df9b7d}{get\+Data} ()
+\item 
+void \hyperlink{classNode_a5d4e30d05e75fb3f2c2e26a0d93f5e6c}{set\+Data} (int \+\_\+data)
+\item 
+void $\ast$ \hyperlink{classNode_af4e2b7adb121ee5eb5e2c38579e13cc7}{operator new} (size\+\_\+t \+\_\+size)
+\item 
+void \hyperlink{classNode_a57a5b45f2cac01a9df29355e579c3e9e}{operator delete} (void $\ast$memory)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classNode_a87c003c9f600e3fc58e6e90835f0b605}{data}
+\item 
+\hyperlink{classNode}{Node} $\ast$ \hyperlink{classNode_a2559a716f69ccaa76d648d9f1b83065e}{next}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNode_a85a0fc5a617106954db31a0e1233517f}\label{classNode_a85a0fc5a617106954db31a0e1233517f}} 
+class {\bfseries Collector}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase Nodo. Almacena la información de cada uno de los elementos enlazados de la lista. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNode_af93785746fd98a394a2295ba2b1f523c}\label{classNode_af93785746fd98a394a2295ba2b1f523c}} 
+\index{Node@{Node}!Node@{Node}}
+\index{Node@{Node}!Node@{Node}}
+\subsubsection{\texorpdfstring{Node()}{Node()}}
+{\footnotesize\ttfamily Node\+::\+Node (\begin{DoxyParamCaption}\item[{int}]{data,  }\item[{\hyperlink{classNode}{Node} $\ast$}]{\+\_\+next }\end{DoxyParamCaption})}
+
+Constructor de la clase \hyperlink{classNode}{Node}. 
+\begin{DoxyParams}{Parameters}
+{\em data} & de tipo integer. \\
+\hline
+{\em \+\_\+next} & de tipo \hyperlink{classNode}{Node}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classNode_aca98907146d5d0687f48bf8be9df9b7d}\label{classNode_aca98907146d5d0687f48bf8be9df9b7d}} 
+\index{Node@{Node}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!Node@{Node}}
+\subsubsection{\texorpdfstring{get\+Data()}{getData()}}
+{\footnotesize\ttfamily int Node\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get\+Data. Método que retorna el dato que almacena el nodo. \begin{DoxyReturn}{Returns}
+un integer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNode_a57a5b45f2cac01a9df29355e579c3e9e}\label{classNode_a57a5b45f2cac01a9df29355e579c3e9e}} 
+\index{Node@{Node}!operator delete@{operator delete}}
+\index{operator delete@{operator delete}!Node@{Node}}
+\subsubsection{\texorpdfstring{operator delete()}{operator delete()}}
+{\footnotesize\ttfamily void Node\+::operator delete (\begin{DoxyParamCaption}\item[{void $\ast$}]{memory }\end{DoxyParamCaption})}
+
+operator delete. Método delete sobrecargado, obtiene una instancia estática de \hyperlink{classCollector}{Collector} y a partir de esa instancia llama al metodo collect\+Node de la clase \hyperlink{classCollector}{Collector}. 
+\begin{DoxyParams}{Parameters}
+{\em memory} & es un puntero de tipo void. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNode_af4e2b7adb121ee5eb5e2c38579e13cc7}\label{classNode_af4e2b7adb121ee5eb5e2c38579e13cc7}} 
+\index{Node@{Node}!operator new@{operator new}}
+\index{operator new@{operator new}!Node@{Node}}
+\subsubsection{\texorpdfstring{operator new()}{operator new()}}
+{\footnotesize\ttfamily void $\ast$ Node\+::operator new (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{\+\_\+size }\end{DoxyParamCaption})}
+
+operator new. Método new sobrecargado, obtiene una instancia estática de \hyperlink{classCollector}{Collector} y a partir de esa instancia llama al método new\+Node de la clase \hyperlink{classCollector}{Collector}. 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+size} & es el tamaño de espacio de memoria que se va almacenar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un puntero de tipo void . 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNode_a5d4e30d05e75fb3f2c2e26a0d93f5e6c}\label{classNode_a5d4e30d05e75fb3f2c2e26a0d93f5e6c}} 
+\index{Node@{Node}!set\+Data@{set\+Data}}
+\index{set\+Data@{set\+Data}!Node@{Node}}
+\subsubsection{\texorpdfstring{set\+Data()}{setData()}}
+{\footnotesize\ttfamily void Node\+::set\+Data (\begin{DoxyParamCaption}\item[{int}]{\+\_\+data }\end{DoxyParamCaption})}
+
+set\+Data. Método que permite variar el dato que almacena el nodo. 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+data} & de tipo integer. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classNode_a87c003c9f600e3fc58e6e90835f0b605}\label{classNode_a87c003c9f600e3fc58e6e90835f0b605}} 
+\index{Node@{Node}!data@{data}}
+\index{data@{data}!Node@{Node}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily int Node\+::data}
+
+variable que almacena el dato del nodo. \mbox{\Hypertarget{classNode_a2559a716f69ccaa76d648d9f1b83065e}\label{classNode_a2559a716f69ccaa76d648d9f1b83065e}} 
+\index{Node@{Node}!next@{next}}
+\index{next@{next}!Node@{Node}}
+\subsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \hyperlink{classNode}{Node}$\ast$ Node\+::next}
+
+puntero que apunta al siguiente nodo en la lista enlazada. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Node.\+h\item 
+Node.\+cpp\end{DoxyCompactItemize}
